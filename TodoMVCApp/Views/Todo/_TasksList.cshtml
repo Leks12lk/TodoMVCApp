@@ -1,0 +1,17 @@
+﻿@model IEnumerable<TodoMVCApp.Models.Todo>
+
+<div class="panel panel-default">
+	<div class="panel-body" id="tasks-container">
+		<!-- list of tasks -->
+		@foreach (var task in Model)
+		{
+			<div class="checkbox task-row @(task.IsDone ? "completed" : "")" data-taskid="@task.Id">
+				<label>
+					<input type="checkbox" value="" class="done-checkbox" onclick="taskCtrl.updateTask(this);">
+					<span>@task.Title</span>
+				</label>
+				<i class="fa fa-times remove pull-right" aria-hidden="true" onclick="taskCtrl.deleteTask(this);"></i>
+			</div>
+		}
+	</div>
+</div>

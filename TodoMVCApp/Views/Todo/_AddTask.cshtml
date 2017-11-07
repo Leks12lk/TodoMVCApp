@@ -1,0 +1,15 @@
+﻿
+<div class="panel panel-default">
+	<div class="panel-body">
+		<form id="newTaskForm" onsubmit="taskCtrl.addTask(event)">
+			<div class="input-group" id="newTask">
+				<div class="form-group">
+					<input type="text" id="task" name="title" class="form-control" placeholder="New task..." onkeydown="taskCtrl.removeErrorMessage()">
+				</div>
+				<div class="input-group-btn">
+					<button id="save-btn" class="btn btn-success" type="submit">Save</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>

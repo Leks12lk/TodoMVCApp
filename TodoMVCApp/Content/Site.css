@@ -1,0 +1,113 @@
+﻿html > body {
+	 background-color: #eeeeee;
+ }
+
+.navbar{
+	margin-bottom: 40px;
+}
+
+.navbar-brand {
+	float: none;
+}
+
+.mt40 {
+	margin-top: 40px;
+}
+
+.task-row {   
+	padding: 15px 0;
+	border-bottom: 1px solid #eee;
+}
+.task-row:last-child {
+	border-bottom: none;
+}
+.task-row .remove {
+	display: none;
+	color: red;
+	-ms-transition: all ease-in .1s;
+	-o-transition: all ease-in .1s;
+	-webkit-transition: all ease-in .1s;
+	transition: all ease-in .1s;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.task-row:hover .remove {
+	display: inline;    
+}
+
+.task-row.completed {    
+	color: #ddd;
+}
+.task-row.completed label {
+	text-decoration: line-through;
+}
+
+.task-row .checkbox-material {
+	padding-right: 15px;
+}
+
+#newTask {
+	position: relative;
+}
+#newTask .error-message {
+	position: absolute;
+	top: 35px;
+	left: 0;
+	color: red;
+}
+.error-alert {
+	position: absolute;
+	top: 25%;
+	left: 40%;
+	width: 250px;
+	z-index: 3010;
+}
+
+.blocked {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #000;
+	-ms-opacity: 0.5;
+	opacity: 0.5;
+	z-index: 3000;
+}
+
+.checkbox label, 
+.radio label, 
+label {
+	color: inherit;
+}
+
+#login,
+#register {
+	margin-top: 50px;
+}
+
+#login h3,
+#register h3 {
+	margin: 10px 0 10px;
+}
+
+.card-signup .header {
+	padding: 5px 0;
+}
+
+.card-signup .content {
+	padding: 20px 30px 0px 10px;
+}
+
+#login .input-group,
+#register .input-group {
+	padding: 10px 0;
+}
+
+@media (min-width: 768px) {
+	.navbar-header {
+		float: none
+	}
+}
+

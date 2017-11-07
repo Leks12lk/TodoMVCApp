@@ -1,0 +1,29 @@
+﻿@model IEnumerable<TodoMVCApp.Models.Todo>
+
+@{
+	ViewBag.Title = "Index";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+	<div class="col-sm-8 col-sm-offset-2">
+		@Html.Partial("_AddTask")
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-8 col-sm-offset-2">
+		@Html.Partial("_TasksList", Model)
+	</div>
+</div>
+
+<script>
+	$(document).ready(function () {
+		//define main urls that stored in config object in app.js
+		config.addTaskUrl = '@Url.Action("AddTask", "Todo")';
+		config.updateTaskUrl = '@Url.Action("UpdateTask", "Todo")';
+		config.deleteTaskUrl = '@Url.Action("DeleteTask", "Todo")';
+
+		//if task is completed set checkbox as checked
+		$('.task-row.completed').find('.done-checkbox').prop('checked', true);
+	});
+</script>
