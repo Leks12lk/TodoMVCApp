@@ -22,11 +22,8 @@ namespace TodoMVCApp.Infrastructure
 		}
 		private void AddBindings()
 		{
-			// конфигурирование контейнера
+			// container configuration
 			_ninjectKernel.Bind<ITodoRepository>().To<TodoRepository>();
-
-
-			//ninjectKernel.Bind<ApplicationDbContext>().To<ApplicationDbContext>();
 		}
 	}
 }

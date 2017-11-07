@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using TodoMVCApp.Models;
 
 namespace TodoMVCApp.Interfaces
@@ -12,6 +8,6 @@ namespace TodoMVCApp.Interfaces
 		IEnumerable<Todo> GetAll();
 		Todo Add(Todo todo);
 		Todo Update(Todo todo);
-		IEnumerable<Todo> Delete(int id);
+		void Delete(int id);
 	}
 }

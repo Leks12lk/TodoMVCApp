@@ -3,6 +3,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace TodoMVCApp.Models
 {
+	/// <summary>
+	/// Class which defines task to do
+	/// </summary>
 	public class Todo
 	{
 		[Key]
